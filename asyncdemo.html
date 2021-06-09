@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	var user = ["bhushan","deepak"];
+		
+		async function adduser(name) {
+			console.log('In async function')
+			let add= await console.log(user.push(name))
+			console.log('task complete')
+			let display = await console.log(user)
+
+
+
+
+			// body...
+		}
+
+		console.log('before calling ')
+		let a=adduser('Ganesh');
+		console.log('after calling')
+		
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

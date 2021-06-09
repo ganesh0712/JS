@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	var user = ["bhushan","deepak"];
+	function a1(name,callback) {
+		setTimeout(function () {
+			console.log(user.push(name))
+			return callback();
+				
+		},3000);
+			
+		}
+
+		function a2(){setTimeout(function () {
+					console.log(user);
+
+		})
+		}
+		a1('disha', (display)=>{
+					a2();
+
+		});
+		a2();
+		
+
+</script>
+</body>
+</html>

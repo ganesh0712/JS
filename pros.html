@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let v= new Promise((resolve, reject) => {
+		let a=2+2;
+
+			if(a==4)
+			{
+				resolve('Success')
+			}
+			else
+				reject('Failed')
+
+		})
+	v.then((message)=>{
+			console.log("In then function : "+message)
+					})
+	.catch((error)=>
+		{
+			console.log("In catch function "+ error)
+		})
+
+
+
+</script>
+</body>
+</html>

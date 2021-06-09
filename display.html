@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	var user = ["bhushan","deepak"];
+
+
+			let adduser= new Promise((resolve, reject) =>{
+					setTimeout(function () {
+						console.log(user.push("Ganesh"))},4000);
+					if(user.length()==3)
+					{
+						resolve('Success')
+					}
+					else
+					{
+						reject('Failed')
+					}
+
+
+			}
+
+
+			adduser.then((message), (display)=>{
+					return console.log(user);
+			})
+
+
+
+		
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
